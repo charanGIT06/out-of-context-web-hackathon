@@ -6,31 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Codevita Live</title>
         <link rel="stylesheet" href="style.css">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- nav bar -->
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html" class="logo">Codevita Live</a></li>
-                <li><a href="" class="nav-btn">Home</a></li>
-                <li><a href="" class="nav-btn">Courses</a></li>
-                <li><a href="" class="nav-btn">Misc</a></li>
-                <li><a href="#register" class="btn">Register</a></li>
-            </ul>
-        </nav>
+        <div class="nav-bg">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="logo">Codevita Live</a></li>
+                    <li><a href="" class="nav-btn">Home</a></li>
+                    <li><a href="" class="nav-btn">Courses</a></li>
+                    <li><a href="" class="nav-btn">Misc</a></li>
+                    <li><a href="#register" class="btn">Register</a></li>
+                </ul>
+            </nav>  
+        </div>
         <!-- main section -->
-        <section class="main">
-            <div class="content">
-                <h1>Codevita Live</h1>
-                <h2>Skill Brewery</h2>
-                <p>Free internship Program</p>
-                <a href="#register" class="btn">Register</a>
-            </div>
-            <img src="images/intro-img.jpg" alt="students" class="img">
-        </section>
+        <div class="main-container">
+            <section class="main">
+                <div class="content">
+                    <h1>Codevita Live</h1>
+                    <h2>Skill Brewery</h2>
+                    <p>Free internship Program</p>
+                    <a href="#register" class="btn">Register</a>
+                </div>
+            </section>
+        </div>
         <!-- description section -->
         <section class="desc">
-            <img src="images/intro-img.jpg" alt="" class="img">
+            <img src="images/img2.jpg" alt="" class="img">
             <div class="content">
                 <h2>Skill Brewery: Free Internship Program</h2>
                 <p>Work on cool hands-on projects to amplify your profile. Gain an internship certificate, work experience and mentoring after the completion of the programme.</p>
@@ -41,7 +49,9 @@
         <!-- features section -->
         <div class="ftr">
             <section class="features">
-                <h2>Features</h2>
+                <div class="heading-style">
+                    <h2>Features</h2>
+                </div>
                 <div class="box">
                     <div class="block">
                         <h2>Perks</h2>
@@ -62,65 +72,71 @@
         </div>
         <!-- form section -->
         <section class="form" id="register">
-            <h2 class="heading">Register Here!</h2>
-            <div class="left">
-                <div class="top">
-                    <h2>Taking in applications for the September cohort!</h2>
-                    <p>Fill in the application and the verification form to enroll.</p>
-                    <p>Make sure you read all the instructions carefully!</p>
-                </div>
-                <div class="bottom">
-                    <h2>Application Process</h2>
-                    <ul>
-                        <li><p>Fill the application form.</p></li>
-                        <li><p>And, fill the verification form.</p></li>
-                    </ul>
-                </div>
+            <div class="heading-style">
+                <h2 class="heading">Register Here!</h2>
             </div>
-            <div class="right">
-                <div class="form-cnt">
-                    <form action="">
-                        <div class="item">
-                            <label for="name">Name</label>
-                            <input type="text" name="Name" class="input" id="name" required>
-                        </div>
-                        <div class="item">
-                            <label for="email">Email</label>
-                            <input type="email" name="Email" class="input" id="email" required>
-                        </div>
-                        <div class="item">
-                            <label for="institute">Name of Institute</label>
-                            <input type="text" name="Name of Institute" class="input" id="institute" required>
-                        </div>
-                        <div class="item">
-                            <label for="qualifications">Qualification</label>
-                            <input type="text" name="Qualifications" class="input" id="qualifications" required>
-                        </div>
-                        <div class="item">
-                            <label for="linkedin">Linkedin Username</label>
-                            <input type="text" name="Linkedin Username" class="input" id="linkedin" required>
-                        </div>
-                        <div class="item">
-                            <label for="how">How did you know about us?</label>
-                            <input type="text" name="How did you know about us?" class="input" id="how" required>
-                        </div>
-                        <div class="item">
-                            <label for="additionfile">Link any additional file</label>
-                            <input type="file" name="Additional File" class="input" id="additionfile">
-                        </div>
-                        <div class="item">
-                            <a href="" class="btn">SUBMIT</a>
-                        </div>
-                    </form>
+            <div class="form-cnt">
+                <div class="left">
+                    <div class="top">
+                        <h2>Taking in applications for the September cohort!</h2>
+                        <p>Fill in the application and the verification form to enroll.</p>
+                        <p>Make sure you read all the instructions carefully!</p>
+                    </div>
+                    <div class="bottom">
+                        <h2>Application Process</h2>
+                        <ul>
+                            <li><p>Fill the application form.</p></li>
+                            <li><p>And, fill the verification form.</p></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="form-cnt">
+                        <form action="">
+                            <div class="item">
+                                <label for="name">Name</label>
+                                <input type="text" name="Name" class="input" id="name" required>
+                            </div>
+                            <div class="item">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" class="input" id="email" required>
+                            </div>
+                            <div class="item">
+                                <label for="institute">Name of Institute</label>
+                                <input type="text" name="Name of Institute" class="input" id="institute" required>
+                            </div>
+                            <div class="item">
+                                <label for="qualifications">Qualification</label>
+                                <input type="text" name="Qualifications" class="input" id="qualifications" required>
+                            </div>
+                            <div class="item">
+                                <label for="linkedin">Linkedin Username</label>
+                                <input type="text" name="Linkedin Username" class="input" id="linkedin" required>
+                            </div>
+                            <div class="item">
+                                <label for="how">How did you know about us?</label>
+                                <input type="text" name="How did you know about us?" class="input" id="how" required>
+                            </div>
+                            <div class="item">
+                                <label for="additionfile">Link any additional file</label>
+                                <input type="file" name="Additional File" class="input" id="additionfile">
+                            </div>
+                            <div class="item">
+                                <a href="" class="btn">SUBMIT</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- quote section -->
-        <section class="quote">
-            <h3>
-                “Code is like humor. When you have to explain it, it’s bad.” – Cory House
-            </h3>
-        </section>
+        <div class="ftr">
+            <section class="quote">
+                <h3>
+                    “Code is like humor. When you have to explain it, it’s bad.” – Cory House
+                </h3>
+            </section>
+        </div>
         <footer class="footer">
             <section>
                 <div class="container">
