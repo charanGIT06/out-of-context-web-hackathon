@@ -278,13 +278,13 @@ nav li:last-child {
     flex-direction: column;
     padding: 1.2rem;
 }
-.input, .track-box {
+.input, .track-box, select, option {
     width: 100%;
-    height: 2.75    rem;
+    height: 2.75rem;
     font-size: 1.2rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
-:is(.input, .track-box):focus {
+:is(.input, .track-box, textarea, select):focus {
     background-color: #ffd8b8;
 }
 .item:last-child {
@@ -458,3 +458,24 @@ nav li:last-child {
 .desc:hover {
     box-shadow: var(--shadow);
 }
+
+
+/* Powershot Registration */
+.powershot {
+    text-align: center;
+}
+.how-it-works .process {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.how-it-works li {
+    padding-bottom: 1rem;
+}
+.whats-included .block {
+    text-align: center;
+    padding: 2rem;
+}   
+/* .form .form-cnt option, select{
+    height: 4rem;
+} */

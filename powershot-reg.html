@@ -26,6 +26,47 @@
             </nav>  
         </div>
 
+        <section class="powershot">
+            <h2>Power-Shot Series</h2>
+            <p>Mini-Courses With Certification From Codevita Live</p>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="heading-style">
+                <h2 class="heading">How it Works?</h2>
+            </div>
+            <div class="process">
+                <ul>
+                    <li>Complete the registration by filling the application above. You will receive the the credentials to access the course within 12 hours.</li>
+                    <li>Access the tutorial through our LMS.</li>
+                    <li>Complete the project and submit the proof of completion through the certification form.</li>
+                    <li>You will receive the certificate in one week.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- What's Included -->
+        <div class="whats-included ftr">
+            <section class="features">
+                <div class="heading-style">
+                    <h2>What's Included</h2>
+                </div>
+                <div class="box">
+                    <div class="block">
+                        <h3>24/7 Doubt Assistance</h3>
+                    </div>
+                    <div class="block">
+                        <h3>Hands on Learning/Capstone Projects</h3>
+                    </div>
+                    <div class="block">
+                        <h3>Certification</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Registration Form -->
         <section class="form" id="register">
             <div class="heading-style">
                 <h2 class="heading">Register Here!</h2>
@@ -49,20 +90,27 @@
                                 <input type="email" name="Email" class="input" id="email" required>
                             </div>
                             <div class="item">
-                                <label for="qualifications">Qualification</label>
+                                <label for="qualifications">Education Qualification</label>
                                 <input type="text" name="Qualifications" class="input" id="qualifications" required>
                             </div>
                             <div class="item">
-                                <label for="linkedin">Linkedin Username</label>
-                                <input type="text" name="Linkedin Username" class="input" id="linkedin" required>
+                                <label for="mini-course">Which mini-course would you like to enroll in?</label>
+                                <select name="" id="mini-course">
+                                    <option value="default">Select one</option>
+                                    <option value="extension">Chrome Extension using JavaScript</option>
+                                    <option value="todo">To-Do List using React JS</option>
+                                    <option value="face">Facial Detection using R  </option>
+                                    <option value="snake">Snake Game using Python</option>
+                                    <option value="amazon">Amazon Clone using React JS</option>
+                                    <option value="music">Music Player ysing Python</option>
+                                    <option value="text">Text to Handwriting in Python</option>
+                                </select>
+                                <!-- <input type="" name="How did you know about us?" class="input" id="mini-course" required> -->
                             </div>
                             <div class="item">
-                                <label for="how">How did you know about us?</label>
-                                <input type="text" name="How did you know about us?" class="input" id="how" required>
-                            </div>
-                            <div class="item">
-                                <label for="additionfile">Link any additional file</label>
-                                <input type="file" name="Additional File" class="input" id="additionfile">
+                                <label for="describe">Briefly describe your tryst with programming.</label>
+                                <!-- <input type="text" name="How did you know about us?" class="input" id="how" required> -->
+                                <textarea name="" id="describe" cols="30" rows="10"></textarea>
                             </div>
                             <div class="item">
                                 <a href="" class="btn">SUBMIT</a>
