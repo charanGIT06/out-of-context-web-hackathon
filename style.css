@@ -238,6 +238,12 @@ nav li:first-child {
     display: flex;
     flex-flow: row wrap;
 }
+.form h2 {
+    line-height: 2.5rem;
+}
+.form p {
+    line-height: 1.7rem;
+}
 .form-cnt {
     display: flex;
     flex-flow: row-wrap;
@@ -328,6 +334,7 @@ textarea {
 /* quote section */
 .quote h3 {
     text-align: center;
+    padding: 2rem;
 }
 
 /* footer section */

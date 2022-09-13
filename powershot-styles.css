@@ -8,10 +8,14 @@
 .orange-bg {
     background-color: var(--lightorange);
 }
+.grey-bg {
+    box-shadow: var(--shadow);
+}
 .how-it-works .process {
     width: 60%;
     margin: 0 auto;
     line-height: 2rem;
+    padding-bottom: 2rem;
 }
 .how-it-works li {
     padding-bottom: 1rem;
@@ -20,8 +24,19 @@
     text-align: center;
     padding: 2rem;
 }
-.right .form-cnt .input {
+
+.form p {
+    padding: 0;
+}
+.item, .input {
     width: 100%;
+}
+.form .right ul {
+    list-style-type: none;
+    padding: 0;
+}
+.form .form-cnt li {
+    padding-bottom: 0.5rem;
 }
 
 @media (max-width: 550px) {

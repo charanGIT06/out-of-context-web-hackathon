@@ -8,16 +8,13 @@
     background-color: var(--lightorange);
 }
 .how-it-works .process {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     line-height: 2rem;
 }
 .how-it-works li {
     padding-bottom: 1rem;
 }
-/* .grey-bg {
-    box-shadow: var(--shadow);
-} */
 .process {
     box-shadow: var(--shadow);
     margin: 0 auto;
@@ -31,9 +28,6 @@
 .how-it-works .process div :is(h4, p) {
     width: 50%;
 }
-.right .form-cnt .input {
-    width: 100%;
-}
 
 @media (max-width: 550px) {
     .orange-bg {
@@ -45,5 +39,9 @@
     .how-it-works .process div {
         flex-flow: column wrap;
         padding-left: 0;
+    }
+    .how-it-works, .process {
+        width: 80%;
+        padding: 1.5rem;
     }
 }

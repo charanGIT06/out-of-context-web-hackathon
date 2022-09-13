@@ -20,6 +20,7 @@
 } */
 .process {
     box-shadow: var(--shadow);
+    width: 100%;
     margin: 0 auto;
     padding: 4rem;
 }
@@ -31,8 +32,19 @@
 .how-it-works .process div :is(h4, p) {
     width: 50%;
 }
-.right .form-cnt .input {
+
+.form p {
+    padding: 0;
+}
+.item, .input {
     width: 100%;
+}
+.form .right ul {
+    list-style-type: none;
+    padding: 0;
+}
+.form .form-cnt li {
+    padding-bottom: 0.5rem;
 }
 
 @media (max-width: 550px) {
@@ -42,7 +54,12 @@
     .powershot {
         padding: 1rem;
     }
+    .process {
+        padding: 2rem;
+        width: 100%;
+    }
     .how-it-works .process div {
+        width: 80%;
         flex-flow: column wrap;
         padding-left: 0;
     }
