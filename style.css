@@ -101,11 +101,6 @@ nav li:first-child {
     color: var(--orange);
 }
 
-@media (max-width: 550px) {
-    .nav li:not(:first-child) {
-        display: none;
-    }
-}
 
 /* main section */
 .main {
@@ -151,10 +146,10 @@ nav li:first-child {
     section {
         padding: 2rem 0 2rem 0;
     }
-    /* nav ul {
+    nav ul {
         flex-flow: column wrap;
         gap: 1.5rem;
-    } */
+    }
     .logo {
         padding-left: 1rem;
     }
