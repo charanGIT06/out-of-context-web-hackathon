@@ -249,6 +249,9 @@ nav li:first-child {
     flex-flow: row-wrap;
     padding-top: 3rem;
 }
+.form .item label {
+    padding-bottom: 0.5rem;
+}
 .form .left {
     width: 50%;
     padding: 0 3rem 0 2rem;
