@@ -43,7 +43,7 @@ h1, h2, h3, p {
 section, nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 8rem 2rem 8rem 2rem;
+    padding: 6rem 2rem 6rem 2rem;
 }
 
 /* elements */
@@ -278,13 +278,13 @@ nav li:last-child {
     flex-direction: column;
     padding: 1.2rem;
 }
-.input {
+.input, .track-box {
     width: 100%;
-    height: 3rem;
+    height: 2.75    rem;
     font-size: 1.2rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
-.input:focus {
+:is(.input, .track-box):focus {
     background-color: #ffd8b8;
 }
 .item:last-child {
@@ -324,8 +324,8 @@ nav li:last-child {
     background-color: var(--orange);
 }
 .footer section {
-    padding: 6rem 2rem 6rem 2rem;
-}
+    padding: 6rem 2rem 2rem 2rem;
+}   
 .container {
     display: flex;
     flex-flow: row wrap;
