@@ -1,0 +1,37 @@
+/* Powershot Registration */
+.voyage {
+    text-align: center;
+    line-height: 2rem;
+}
+.voyage h2 {
+    padding-bottom: 2rem;
+}
+.orange-bg {
+    background-color: var(--lightorange);
+}
+.whats-included .block {
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 550px) {
+    .orange-bg {
+        padding: 1rem;
+    }
+    .voyage {
+        padding: 1rem;
+    }
+}
+.form p {
+    padding: 0;
+}
+.item, .input {
+    width: 100%;
+}
+.form .right ul {
+    list-style-type: none;
+    padding: 0;
+}
+.form .form-cnt li {
+    padding-bottom: 0.5rem;
+}

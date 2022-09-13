@@ -1,20 +1,22 @@
 /* Courses - Page */
-/* Info Section */
-.cont {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.cont div {
+    box-shadow: var(--shadow);
+}
+.grey-bg {
+    background-color: var(--grey);
+    padding: 6rem 0 6rem 0;
 }
 .cont div {
+    background-color: var(--white);
     text-align: center;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
-    padding: 1rem;
-}
+    align-items: center;
+    padding: 1.3rem;
+}   
 .cont div span {
     font-weight: bold;
     font-size: 2rem;
@@ -22,25 +24,59 @@
 
 /* Courses Section */
 .courses .courses-cont {
+    background-color: var(--dark-grey);
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 2rem;
-    padding: 2rem;
-    background-color: var;
+    padding: 3rem;
 } 
 .courses .box {
+    background-color: var(--white);
     flex: 0 0 auto;
-    height: 25rem;
+    height: auto;
     width: 25rem;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     row-gap: 1rem;
     padding: 1.2rem;
+    text-align: center;
+}   
+.courses .courses-cont .box h3 {
+    text-align: left;
 }   
 .courses .box .img{
     width: 100%;
     padding: 0;
     margin: 0;
+}
+.courses .box:hover {
+    box-shadow: var(--shadow);
+}
+
+.white-bg {
+    background-color: var(--white);
+    padding: 4rem;
+}   
+.white-bg:hover {
+    box-shadow: var(--shadow);
+}
+
+/* Info Section */
+.cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 550px) {
+    .cont {
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+    .white-bg {
+        padding: 2rem   ;
+    }
 }

@@ -1,0 +1,34 @@
+/* Powershot Registration */
+.powershot {
+    text-align: center;
+}
+.powershot h2 {
+    padding-bottom: 2rem;
+}
+.orange-bg {
+    background-color: var(--lightorange);
+}
+.how-it-works .process {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.how-it-works li {
+    padding-bottom: 1rem;
+}
+.whats-included .block {
+    text-align: center;
+    padding: 2rem;
+}
+.right .form-cnt .input {
+    width: 100%;
+}
+
+@media (max-width: 550px) {
+    .orange-bg {
+        padding: 1rem;
+    }
+    .powershot {
+        padding: 1rem;
+    }
+}

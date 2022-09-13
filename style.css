@@ -27,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
@@ -38,6 +38,7 @@ h1, h2, h3, p {
     padding: 2.5rem;
     border-top: 0.5rem solid var(--orange);
 }
+
 
 /* nav, section width */
 section, nav {
@@ -183,8 +184,8 @@ nav li:last-child {
 .desc .content {
     padding: 0 0 0 3rem;
 }
-.desc .content h2, p {
-    padding-bottom: 1rem;
+.desc .content h2, h4, p {
+    padding-bottom: 2rem;
 }
 @media (max-width: 550px) {
     section {
@@ -256,6 +257,9 @@ nav li:last-child {
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
+.form .left h2, p {
+    padding-bottom: 2rem;
+}
 .form :is(.top, .bottom) {
     padding: 4rem 1rem 0rem 1rem;
 }
@@ -283,6 +287,11 @@ nav li:last-child {
     height: 2.75rem;
     font-size: 1.2rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
+textarea {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 :is(.input, .track-box, textarea, select):focus {
     background-color: #ffd8b8;
@@ -383,99 +392,3 @@ nav li:last-child {
         width: 100%;
     }
 }
-
-
-/* Courses - Page */
-/* Info Section */
-.cont {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.grey-bg {
-    background-color: var(--grey);
-    padding: 6rem 0 6rem 0;
-}
-/*
-.white-bg {
-    background-color: var(--white);
-}
-*/
-.cont div {
-    background-color: var(--white);
-    text-align: center;
-    width: 20rem;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.3rem;
-}   
-.cont div span {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-/* Courses Section */
-.courses .courses-cont {
-    background-color: var(--dark-grey);
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 2rem;
-    padding: 3rem;
-} 
-.courses .box {
-    background-color: var(--white);
-    flex: 0 0 auto;
-    height: auto;
-    width: 25rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    row-gap: 1rem;
-    padding: 1.2rem;
-    text-align: center;
-}   
-.courses .courses-cont .box h3 {
-    text-align: left;
-}   
-.courses .box .img{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.courses .box:hover {
-    box-shadow: var(--shadow);
-}
-
-.desc {
-    background-color: var(--white);
-    padding: 4rem;
-    border-radius: 25px;
-}   
-.desc:hover {
-    box-shadow: var(--shadow);
-}
-
-
-/* Powershot Registration */
-.powershot {
-    text-align: center;
-}
-.how-it-works .process {
-    width: 60%;
-    margin: 0 auto;
-    line-height: 2rem;
-}
-.how-it-works li {
-    padding-bottom: 1rem;
-}
-.whats-included .block {
-    text-align: center;
-    padding: 2rem;
-}   
-/* .form .form-cnt option, select{
-    height: 4rem;
-} */
