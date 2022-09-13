@@ -5,6 +5,13 @@
     --orange: #e76f51;
     --white: white;
     --grey: rgb(231, 231, 231);
+    --dark-grey: rgb(198, 198, 198);
+    --shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 * {
     box-sizing: border-box;
@@ -20,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -212,13 +219,7 @@ nav li:last-child {
     justify-content: center;
     align-items: center;
     background-color: var(--white);
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow);
 }
 
 @media (max-width: 550px) {
@@ -381,4 +382,79 @@ nav li:last-child {
     .f-box {
         width: 100%;
     }
+}
+
+
+/* Courses - Page */
+/* Info Section */
+.cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.grey-bg {
+    background-color: var(--grey);
+    padding: 6rem 0 6rem 0;
+}
+/*
+.white-bg {
+    background-color: var(--white);
+}
+*/
+.cont div {
+    background-color: var(--white);
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+}   
+.cont div span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Courses Section */
+.courses .courses-cont {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 3rem;
+} 
+.courses .box {
+    background-color: var(--white);
+    flex: 0 0 auto;
+    height: auto;
+    width: 25rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    row-gap: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+}   
+.courses .courses-cont .box h3 {
+    text-align: left;
+}   
+.courses .box .img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.courses .box:hover {
+    box-shadow: var(--shadow);
+}
+
+.desc {
+    background-color: var(--white);
+    padding: 4rem;
+    border-radius: 25px;
+}   
+.desc:hover {
+    box-shadow: var(--shadow);
 }

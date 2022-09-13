@@ -1,0 +1,46 @@
+/* Courses - Page */
+/* Info Section */
+.cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.cont div {
+    text-align: center;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 1rem;
+}
+.cont div span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Courses Section */
+.courses .courses-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var;
+} 
+.courses .box {
+    flex: 0 0 auto;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    row-gap: 1rem;
+    padding: 1.2rem;
+}   
+.courses .box .img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
